@@ -10,5 +10,6 @@ with open('villes_france.csv', newline='') as csvfile:
 		requete+="\""+row[10]+"\",\""+row[1]+"\",\""+row[3]+"\",\""+row[19]+"\",\""+row[20]+"\")"
 		c.execute(requete)
 conn.commit()
+
 conn.close()
 
