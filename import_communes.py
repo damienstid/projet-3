@@ -11,5 +11,6 @@ with open('villes_france.csv', newline='') as csvfile:
 		c.execute(requete)
 conn.commit()
 
+
 conn.close()
 
