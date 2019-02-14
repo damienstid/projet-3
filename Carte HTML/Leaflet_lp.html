@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"/>
+        <script type="text/javascript" src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+        <script type="text/javascript" src="leaflet-color-markers"></script>
+    </head>
+ 
+    <body onload="initialize()">
+    <div id="map" style="width:100%; height:100%"></div>
+
+        
+<script>
+    function initialize() {
+        var map = L.map('map').setView([48.833, 2.333], 6);
+ 
+        var osmLayer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+            maxZoom: 19
+        });
+        map.addLayer(osmLayer);
+L.marker([49.1167,-1.1]).addTo(map).bindPopup("<b>AGNEAUX</b>,<br>1 étudiant");
+L.marker([48.6833,-1.36667]).addTo(map).bindPopup("<b>AVRANCHES</b>,<br>2 étudiants");
+L.marker([49.2667,-0.7]).addTo(map).bindPopup("<b>BAYEUX</b>,<br>1 étudiant");
+L.marker([49.1833,-0.35]).addTo(map).bindPopup("<b>CAEN</b>,<br>3 étudiants");
+L.marker([49.2,2.46667]).addTo(map).bindPopup("<b>CHANTILLY</b>,<br>1 étudiant");
+L.marker([49.3167,1.03333]).addTo(map).bindPopup("<b>CLEON</b>,<br>1 étudiant");
+L.marker([47.3167,5.01667]).addTo(map).bindPopup("<b>DIJON</b>,<br>1 étudiant");
+L.marker([49.2833,1]).addTo(map).bindPopup("<b>ELBEUF</b>,<br>1 étudiant");
+L.marker([48.9,-0.2]).addTo(map).bindPopup("<b>FALAISE</b>,<br>2 étudiants");
+L.marker([48.8333,-1.6]).addTo(map).bindPopup("<b>GRANVILLE</b>,<br>1 étudiant");
+L.marker([49.4167,0.233333]).addTo(map).bindPopup("<b>HONFLEUR</b>,<br>1 étudiant");
+L.marker([49.1333,-0.35]).addTo(map).bindPopup("<b>IFS</b>,<br>1 étudiant");
+L.marker([46.2167,5.55]).addTo(map).bindPopup("<b>IZERNORE</b>,<br>1 étudiant");
+L.marker([48,0.2]).addTo(map).bindPopup("<b>LE MANS</b>,<br>1 étudiant");
+L.marker([49.15,0.233333]).addTo(map).bindPopup("<b>LISIEUX</b>,<br>1 étudiant");
+L.marker([49.1667,-0.316667]).addTo(map).bindPopup("<b>MONDEVILLE</b>,<br>1 étudiant");
+L.marker([49.15,-0.483333]).addTo(map).bindPopup("<b>MOUEN</b>,<br>1 étudiant");
+L.marker([47.2167,-1.55]).addTo(map).bindPopup("<b>NANTES</b>,<br>1 étudiant");
+L.marker([49.6167,0.766667]).addTo(map).bindPopup("<b>YVETOT</b>,<br>1 étudiant");
+
+    } 
+</script>    
+</body>
+</html>
+</body>
+</html>
