@@ -1,0 +1,7 @@
+CREATE TABLE NAF(
+    NIV5 VARCHAR(7),
+    NIV1 VARCHAR(1)
+);
+
+
+
