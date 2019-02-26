@@ -16,7 +16,7 @@ CREATE TABLE SIRENE (
 code_entreprise TEXT,
 code_etablissement TEXT,
 departement TEXT,
-code insee TEXT,
+code insee TEXT,    --DEPET || COMET
 DEPET TEXT,
 COMET TEXT,
 NIC TEXT,
