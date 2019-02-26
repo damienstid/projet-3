@@ -1,5 +1,5 @@
 CREATE TABLE LP(
-code INT PRIMARY KEY,
+code TEXT PRIMARY KEY,
 type_diplome TEXT,
 q6_7 TEXT, -- type d’employeur
 q6_8 TEXT, -- secteur activite
