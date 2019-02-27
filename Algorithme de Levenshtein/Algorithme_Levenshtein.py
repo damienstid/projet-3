@@ -13,15 +13,8 @@ def levenshtein(mot1,mot2):
 
 import sqlite3
 
-liste = []
-
 conn = sqlite3.connect('data.db')
 c_LP = conn.cursor()
-
-#requeteSupprCol  = "ALTER TABLE LP DROP COLUMN villeSIRENE"
-#c.execute(requeteSupprCol)
-#requeteAjoutColonne = "ALTER TABLE LP ADD villeSIRENE VARCHAR(100)"
-#c.execute(requeteAjoutColonne)
 
 
 for row_LP in c_LP.execute('SELECT * FROM LP WHERE q6_9a IS NOT NULL AND q6_9c IS NOT NULL'):
@@ -50,7 +43,7 @@ for row_LP in c_LP.execute('SELECT * FROM LP WHERE q6_9a IS NOT NULL AND q6_9c I
         requete += 'NOM_COM = \'' + nom_commune + '\' WHERE CODE = \'' + row_LP[0] + '\''
         # print(row_LP[0], row_LP[6], nom_commune, distanceMinimum, sep=",")
         # print(requete)
-        c_communes.execute(requete)
+        #c_communes.execute(requete)
       
 conn.commit()
 conn.close()
