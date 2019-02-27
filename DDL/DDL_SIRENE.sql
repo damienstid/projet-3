@@ -22,8 +22,8 @@ COMET TEXT,
 NIC TEXT,
 enseigne TEXT,
 nom_etablissement TEXT,
-code_naf TEXT
+code_naf TEXT 
 );
-
+ALTER TABLE SIRENE ADD COLUMN 
 CREATE INDEX departement_index ON SIRENE(departement);
 
