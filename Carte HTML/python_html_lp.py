@@ -26,10 +26,10 @@ with open('jointure_LP.csv', newline = '') as csvfile:
     csvfile.readline()
     spamreader = csv.reader(csvfile, delimiter='|', quotechar='"')
     for row in spamreader:
-        if row[12] == "1" :
-            f.write('L.marker(['+row[10]+','+row[9]+']).addTo(map).bindPopup('"\"<b>"+row[3]+'</b>,<br>'+row[12]+' étudiant'+"\""');' "\n")
-        else :
-            f.write('L.marker(['+row[10]+','+row[9]+']).addTo(map).bindPopup('"\"<b>"+row[3]+'</b>,<br>'+row[12]+' étudiants'+"\""');' "\n")
+        #if row[12] == "1" :
+        f.write('L.marker(['+row[10]+','+row[11]+']).addTo(map)'+ "\n")
+        '''else :
+            f.write('L.marker(['+row[9]+','+row[10]+']).addTo(map).bindPopup('"\"<b>"+row[5]+'</b>,<br>'+row[12]+' étudiants'+"\""');' "\n")'''
 
 f.write('''
     } 
